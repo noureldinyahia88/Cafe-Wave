@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Cafe Wave</title>
+</head>
+<body>
+    <div class="cafe">
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+        <video autoplay muted loop id="tm-video">
+            <source class="bg" src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+        </video> 
+
+        <div class="container w-100 d-flex flex-lg-row flex-md-column  flex-sm-column">
+            <div class="tm-left w-50 w-100">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 col-sm-6">
+                        <div class="box cafeWave">
+                            <i class="fas fa-coffee fa-3x tm-site-logo"></i>
+                            <h1 class="site-name">Cafe Wave</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-3">
+                        <a class="main-link active" href="#" id="DrinkMenu">
+                            <div class="box">
+                                <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                                <span>Drink Menu</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-3">
+                        <a class="main-link" id="about" href="#about">
+                        <div class="box">
+                            <i class="fas fa-users tm-page-link-icon"></i>
+                            <span>About Us</span>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-3">
+                        <a class="main-link" id="SpecialLink" href="#">
+                            <div class="box">
+                                <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                                <span>Special item</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-3">
+                        <a class="main-link" id="Contact" href="#">
+                            <div class="box">
+                                <i class="fas fa-comments tm-page-link-icon"></i>
+                                <span>Contact</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+                <!-- *******************drink************************* -->
+            <div class="tm-right w-50 w-100 drink">
+                <nav class="drinks-nav">
+                    <ul>
+                        <li><a href="#IcedCoffee" class="link ice" data-id="cold">Iced Coffee</a></li>
+                        <li><a href="#hotCoffe" class="link hot" data-id="hot">Hot Coffee</a></li>
+                        <li><a href="#FruitJuice" class="link Fruit" data-id="juice">Fruit Juice</a></li>
+                    </ul>
+                </nav>
+                <!-- ice coffe -->
+                <div class="items coffee iceCoffe" id="IcedCoffee">
+                    <div class="item d-flex mt-3 gap-2">
+                        <img class="ice-coffe-img" src="imags/iced-americano.png" alt="">
+                        <div class="item-details">
+                            <div class="name-price">
+                                <h2 class="ice-coffe">Iced Americano</h2>
+                                <span class="price">$10.25</span>
+                            </div>
+                            <p class="descraption">Here is a short description for the first item. Wave Cafe Template is provided by Tooplate.</p>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3 gap-2">
+                        <img class="ice-coffe-img" src="imags/iced-cappuccino.png" alt="">
+                        <div class="item-details">
+                            <div class="name-price">
+                                <h2 class="ice-coffe">Iced Cappuccino</h2>
+                                <span class="price">$12.25</span>
+                            </div>
+                            <p class="descraption">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3 gap-2">
+                        <img class="ice-coffe-img" src="imags/iced-espresso.png" alt="">
+                        <div class="item-details">
+                            <div class="name-price">
+                                <h2 class="ice-coffe">Iced Espresso</h2>
+                                <span class="price">$14.25</span>
+                            </div>
+                            <p class="descraption">You are not permitted to redistribute this template ZIP file on any other template websites.</p>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3 gap-2">
+                        <img class="ice-coffe-img" src="imags/iced-latte.png" alt="">
+                        <div class="item-details">
+                            <div class="name-price">
+                                <h2 class="ice-coffe">Iced Latte</h2>
+                                <span class="price">$11.50</span>
+                            </div>
+                            <p class="descraption">Contents are organized into 3 tabs. Please contact Tooplate if you have anything to ask.</p>
+                        </div>
+                    </div>
+                </div>
+                        <!--hot coffe ******************************** -->
+                        <div class="items coffee hotCofee" id="hotCoffe">
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/hot-americano.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Hot Americano</h2>
+                                        <span class="price">$8.50</span>
+                                    </div>
+                                    <p class="descraption">Here is a short description for the item along with a squared thumbnail.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/hot-cappuccino.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Hot Cappuccino</h2>
+                                        <span class="price">$9.50</span>
+                                    </div>
+                                    <p class="descraption">Here is a list of 4 items that can add more as you need. Only content area will be scrolling.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/hot-espresso.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Hot Espresso</h2>
+                                        <span class="price">$7.50</span>
+                                    </div>
+                                    <p class="descraption">Left side logo and main menu are fixed. The video background is fixed.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/hot-latte.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Hot Latte</h2>
+                                        <span class="price">$6.50</span>
+                                    </div>
+                                    <p class="descraption">Page contents are organized into 3 tabs to show different lists of items.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- **********************Fruit Juice********************** -->
+                        <div class="items coffee FruitJuice" id="FruitJuice">
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/smoothie-1.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Strawberry Smoothie
+                                        </h2>
+                                        <span class="price">$12.50</span>
+                                    </div>
+                                    <p class="descraption">Here is a short description for the item along with a squared thumbnail.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/smoothie-2.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Red Berry Smoothie</h2>
+                                        <span class="price">$14.50</span>
+                                    </div>
+                                    <p class="descraption">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/smoothie-3.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Pineapple Smoothie</h2>
+                                        <span class="price">$16.50</span>
+                                    </div>
+                                    <p class="descraption">Left side logo and main menu are fixed. The video background is fixed.</p>
+                                </div>
+                            </div>
+        
+                            <div class="item d-flex mt-3 gap-2">
+                                <img class="ice-coffe-img" src="imags/smoothie-4.png" alt="">
+                                <div class="item-details">
+                                    <div class="name-price">
+                                        <h2 class="ice-coffe">Spinach Smoothie</h2>
+                                        <span class="price">$18.50</span>
+                                    </div>
+                                    <p class="descraption">You are not allowed to redistribute the template ZIP file on other template sites.</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
+
+                <!--about-->
+            <div class="tm-right w-50 w-100 mt-3 about" id="aboutsec">
+                <div class="row">
+                    <div class="About-Wave-Cafe gap-3">
+                        <img src="imags/about-1.png" alt="">
+                        <div class="about-descrption1">
+                            <h1 class="h1-about">About Wave Cafe</h1>
+                            <p class="p-about">Wave Cafe is a one-page video background HTML CSS template from Tooplate. You can use this for your business websites.</p>
+                            <p class="p2-about">You can also use this for your client websites which you get paid for your website services. Please tell your friends about us.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="About-Wave-Cafe-2 gap-3">
+                        <div class="about2-des d-flex">
+                            <div class="about-descrption1">
+                                <h1 class="h1-about">How we began</h1>
+                                <p class="p-about">If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>
+                            </div>
+                            <img src="imags/about-2.png" alt="">
+                        </div>
+                        <p class="p2-about mt-3">Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--***************************************Special items******************************************-->
+            <div class="tm-right w-50 w-100 mt-2 mb-5 Special" id="Special">
+                <div class="row Special-row">
+                    <div class="col-lg-6 ">
+                        <div class="special-content">
+                            <img src="imags/special-01.jpg" alt="">
+                            <h2>Special One</h2>
+                            <p>Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="special-content">
+                            <img src="imags/special-02.jpg" alt="">
+                            <h2>Second Item</h2>
+                            <p>You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 Special-row">
+                    <div class="col-lg-6">
+                        <div class="special-content">
+                            <img src="imags/special-03.jpg" alt="">
+                            <h2>Third Special Item</h2>
+                            <p>You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="special-content">
+                            <img src="imags/special-04.jpg" alt="">
+                            <h2>Special Item Fourth</h2>
+                            <p>Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 Special-row">
+                    <div class="col-lg-6">
+                        <div class="special-content">
+                            <img src="imags/special-05.jpg" alt="">
+                            <h2>Sixth Sense</h2>
+                            <p>Here is a short text description for sixth item. This text is four lines.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="special-content">
+                            <img src="imags/special-06.jpg" alt="">
+                            <h2>Seventh Item</h2>
+                            <p>Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *****Contact****** -->
+            <div class="tm-right w-50 w-100 mt-2 mb-5 Contact" id="Contact">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="Contact-content">
+                            <h2>Contact Wave</h2>
+                            <p>Wave Cafe Template has a video background. You can use this layout for your websites. Please contact Tooplate's Facebook page. Tell your friends about our website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-lg-flex justify-content-lg-end justify-content-sm-end mt-3 form">
+                        <form action="" method="POST" id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                        </div>        
+                        <div class="form-group tm-mb-30">
+                            <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                        </div>        
+                        <div>
+                            <button type="submit" class="tm-btn-primary">
+                            Submit
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <footer class="mt-5">
+            <p>Copyright 2020 Wave Cafe | By: Nour Thrwat </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="articles.json"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

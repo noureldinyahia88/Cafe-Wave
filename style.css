@@ -1,0 +1,297 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: #1E5050;
+	font-family: 'Roboto', 'sans-serif';
+	height: 100vh;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+.cafe #tm-video{
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.container{
+	position: relative;
+}
+.main-link{
+	margin-top: 10px;
+	height: 120px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: #099;
+	cursor: pointer;
+	transition: .5s ease-in;
+}
+.main-link.active{
+	background-color: #099;
+	color: #fff;
+}
+.main-link:hover{
+	background-color: #099;
+	color: #fff;
+}
+.box span{
+	font-size: 1.5rem;
+}
+.tm-page-link-icon{
+	font-size: 2rem;
+}
+.box.cafeWave{
+	background-color: white;
+    color: #099;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-name{
+	font-size: 2.5rem;
+}
+.box.cafeWave .tm-site-logo{
+	margin-right: 20px;
+}
+.tm-left, .tm-right{
+	width: 50%;
+}
+.main-link{
+	text-decoration: none;
+}
+/* ************right********** */
+.drinks-nav{
+	margin-top: 20px;
+	background-color: rgba(0,0,0,0.6);
+	height: 80px;
+}
+.drinks-nav ul{
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+	list-style-type: none;
+}
+.link{
+	text-decoration: none;
+	color: white;
+    font-size: 1.2rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+	transition: 0.5s ease;
+}
+.link.active{
+	color: #96FEFF;
+    border-bottom: 4px solid #96FEFF;
+}
+.link:hover{
+	color: #96FEFF;
+    border-bottom: 4px solid #96FEFF;
+}
+.item-details{
+	background-color: rgba(0,0,0,0.6);
+	padding: 20px;
+}
+.name-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.name-price .ice-coffe{
+	color: #fff;
+}
+.price{
+	color: #96FEFF;
+	font-size: 1.17em;
+    font-weight: bold;
+}
+.descraption{
+	color: #fff;
+}
+.iceCoffe, .hotCofee, .FruitJuice{
+	display: none;
+}
+.iceCoffe.active, .hotCofee.active, .FruitJuice.active{
+	display: block;
+}
+
+/****************************About************** */
+.About-Wave-Cafe{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(0,0,0,0.6);
+	padding: 40px 30px 50px 0;
+	color: #fff;
+	height: 400px;
+}
+.p-about{
+	line-height: 1.8;
+	font-size: 18px;
+}
+.About-Wave-Cafe-2{
+	background-color: rgba(0,0,0,0.6);
+	padding: 40px 30px 50px 0;
+	color: #fff;
+	height: 400px;
+}
+.h1-about{
+	margin-bottom: 32px;
+	color: #3CC;
+}
+
+/* **********************Special*********************** */
+.special-content{
+	background-color: rgba(0,0,0,0.6);
+	height: 100%;
+	margin-top: 10px;
+}
+.special-content img{
+	max-width: 100%;
+	width: 100%;
+}
+.special-content h2{
+	font-size: 25px;
+	padding: 20px;
+	color: #3CC;
+}
+.special-content p{
+	color: #fff;
+	padding: 0 20px 20px;
+}
+/* **********************Contact********************** */
+.Contact-content{
+	background-color: rgba(0,0,0,0.6);
+	padding: 50px 50px;
+}
+.Contact-content h2{
+	color: #3CC;
+	margin-bottom: 30px;
+}
+.Contact-content p{
+	color: #fff;
+	line-height: 1.8;
+    margin-top: 0;
+}
+.contact-form{
+	background-color: rgba(0,0,0,0.6);
+	width: 75%;
+	padding: 30px;
+}
+.form-group{
+	margin-bottom: 25px;
+}
+.tm-form-control{
+	display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+.tm-form-control:focus{
+	outline: none;
+}
+.tm-btn-primary{
+	display: block;
+    margin-left: auto;
+    margin-right: 0;
+	color: #099;
+    background-color: white;
+    border: 0;
+    padding: 12px 40px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tm-btn-primary:hover {
+    color: white;
+    background-color: #099;
+	cursor: pointer;
+}
+.drink, .about, .Special, .Contact{
+	display: none;
+}
+.drink.active ,.about.active, .Special.active, .Contact.active{
+	display: block;
+}
+footer{
+	position: absolute;
+	left: 0;
+	left: 10px;
+}
+footer p{
+	padding: 10px 65px 10px 20px;
+    display: inline-block;
+	background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+#tm-video-control-button{
+	position: fixed;
+    right: 30px;
+    bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+	padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media (max-width:912px) {
+	.container{
+		flex-direction: column;
+	}
+	.drinks-nav ul{
+		flex-direction: column;
+	}
+	.drinks-nav{
+		height: 150px;
+	}
+	.item{
+		flex-direction: column;
+		align-items: center;
+	}
+	.ice-coffe-img{
+		width: 150px;
+	}
+	.Special-row{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.contact-form{
+		width: 100%;
+	}
+	.p-about,.p2-about{
+		line-height: 1.2;
+		font-size: 14px;
+	}
+	footer{
+		position: absolute;
+		left: 0;
+		margin: 10px;
+	}
+	.h1-about{
+		font-size: 21px;
+	}
+	.About-Wave-Cafe, .About-Wave-Cafe-2{
+		height: 350px;
+	}
+}
